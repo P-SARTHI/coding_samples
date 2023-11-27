@@ -1,0 +1,308 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "hashmap_implement",
+            "request": "launch",
+            "mainClass": "hashmap_implement",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "hash_map",
+            "request": "launch",
+            "mainClass": "hash_map",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "hash_set",
+            "request": "launch",
+            "mainClass": "hash_set",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "bst",
+            "request": "launch",
+            "mainClass": "bst",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "binary_search",
+            "request": "launch",
+            "mainClass": "binary_search",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "tree_sumat_level",
+            "request": "launch",
+            "mainClass": "tree_sumat_level",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "subtree_problem",
+            "request": "launch",
+            "mainClass": "subtree_problem",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "binary_tree",
+            "request": "launch",
+            "mainClass": "binary_tree",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "queue_problems",
+            "request": "launch",
+            "mainClass": "queue_problems",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "queue_implement_linkdlist",
+            "request": "launch",
+            "mainClass": "queue_implement_linkdlist",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "circularqueue_implement",
+            "request": "launch",
+            "mainClass": "circularqueue_implement",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "queue_implement_array",
+            "request": "launch",
+            "mainClass": "queue_implement_array",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "stack_implement_array",
+            "request": "launch",
+            "mainClass": "stack_implement_array",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "stack_problems",
+            "request": "launch",
+            "mainClass": "stack_problems",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "stack_implement_driver",
+            "request": "launch",
+            "mainClass": "stack_implement_driver",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "stack_implement",
+            "request": "launch",
+            "mainClass": "stack_implement",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "linkedlist_loop",
+            "request": "launch",
+            "mainClass": "linkedlist_loop",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "linkedlist_problems",
+            "request": "launch",
+            "mainClass": "linkedlist_problems",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "linkedlist_implement",
+            "request": "launch",
+            "mainClass": "linkedlist_implement",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "Arrayist_implement",
+            "request": "launch",
+            "mainClass": "Arrayist_implement",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "Oops",
+            "request": "launch",
+            "mainClass": "Oops",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "quick_sort",
+            "request": "launch",
+            "mainClass": "quick_sort",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "tUf",
+            "request": "launch",
+            "mainClass": "tUf",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "merge_sort",
+            "request": "launch",
+            "mainClass": "merge_sort",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "sudoku",
+            "request": "launch",
+            "mainClass": "sudoku",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "experiments",
+            "request": "launch",
+            "mainClass": "experiments",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "nqueens",
+            "request": "launch",
+            "mainClass": "nqueens",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "array_check_asend",
+            "request": "launch",
+            "mainClass": "array_check_asend",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "bitmanipulation",
+            "request": "launch",
+            "mainClass": "bitmanipulation",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "fibonacci",
+            "request": "launch",
+            "mainClass": "fibonacci",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "gcd",
+            "request": "launch",
+            "mainClass": "gcd",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "hollowbutterfly",
+            "request": "launch",
+            "mainClass": "hollowbutterfly",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "inser",
+            "request": "launch",
+            "mainClass": "inser",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "pascaltriangle",
+            "request": "launch",
+            "mainClass": "pascaltriangle",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "recursion",
+            "request": "launch",
+            "mainClass": "recursion",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "recurwithinloop",
+            "request": "launch",
+            "mainClass": "recurwithinloop",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "sorting",
+            "request": "launch",
+            "mainClass": "sorting",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "spiral",
+            "request": "launch",
+            "mainClass": "spiral",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "stringbuild",
+            "request": "launch",
+            "mainClass": "stringbuild",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "strings",
+            "request": "launch",
+            "mainClass": "strings",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "transpose",
+            "request": "launch",
+            "mainClass": "transpose",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "two_d_array",
+            "request": "launch",
+            "mainClass": "two_d_array",
+            "projectName": "Test_db03d289"
+        }
+    ]
+}
