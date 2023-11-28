@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "union_of_arrays",
+            "request": "launch",
+            "mainClass": "union_of_arrays",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "hash_problem_numberfrequency",
             "request": "launch",
             "mainClass": "hash_problem_numberfrequency",
