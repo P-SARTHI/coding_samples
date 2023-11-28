@@ -42,7 +42,7 @@ public class union_of_arrays {
 
 
     } 
-    public static int[] delete_duplicates(int arr[]){
+    public static int[] delete_duplicates(int arr[]){//to delete duplicates
        int[] temp = new int[arr.length];
         int count=0;
         for(int i=0;i<arr.length;i++){
