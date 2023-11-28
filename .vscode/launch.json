@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "hash_problem_numberfrequency",
+            "request": "launch",
+            "mainClass": "hash_problem_numberfrequency",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "hashmap_implement",
             "request": "launch",
             "mainClass": "hashmap_implement",
