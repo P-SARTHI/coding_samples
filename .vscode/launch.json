@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "print_subarrays",
+            "request": "launch",
+            "mainClass": "print_subarrays",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "itenary",
+            "request": "launch",
+            "mainClass": "itenary",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "intersection_array",
             "request": "launch",
             "mainClass": "intersection_array",
