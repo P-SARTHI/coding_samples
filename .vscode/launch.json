@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sumofarray_hash",
+            "request": "launch",
+            "mainClass": "sumofarray_hash",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "print_subarrays",
             "request": "launch",
             "mainClass": "print_subarrays",
