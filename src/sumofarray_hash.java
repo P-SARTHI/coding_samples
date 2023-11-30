@@ -1,8 +1,8 @@
 import java.util.*;
 public class sumofarray_hash {
     public static void main(String args[]){
-        int arr[]={ 10, 2, -2, -20, 10};
-    int k=-10;
+        int arr[]={ 1,1,1,};
+    int k=2;
      HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0,1);
         int res = 0;
