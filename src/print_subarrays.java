@@ -4,8 +4,8 @@ public class print_subarrays {
        int arr[]={1,2,3,4};
        int res[]={};
       // subarrays_without_rcursion(arr);
-       sumof_subarrays_prefixmethod(arr);
-       //subarrays_with_rcursion(arr, 0, res);
+      // sumof_subarrays_prefixmethod(arr);
+       subarrays_with_rcursion(arr);
     }
     public static  void subarrays_without_rcursion(int arr[]){
             int count=0;  
@@ -45,7 +45,19 @@ public class print_subarrays {
         }
          
     }
-    public static void subarrays_with_rcursion(int arr[],int n,int res[]){
+    public static void subarrays_with_rcursion(int  arr[]){
+        if(arr.length==0){
+            return ;
+        } 
+             
+        for(int i=0;i<arr.length;i++){
+             System.out.print(arr[i]);
+             int temp[]=new int[arr.length-1];
+               for(int j=1;j<arr.length;j++){
+                temp[j-1]=arr[j];
+               }
+                 subarrays_with_rcursion(temp);
                
+               }
     }
 }

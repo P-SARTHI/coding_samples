@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "searching_subsequences_in_tire",
+            "request": "launch",
+            "mainClass": "searching_subsequences_in_tire",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "Trie_implement",
+            "request": "launch",
+            "mainClass": "Trie_implement",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "alternate_hash_sumof_subarrays",
             "request": "launch",
             "mainClass": "alternate_hash_sumof_subarrays",
