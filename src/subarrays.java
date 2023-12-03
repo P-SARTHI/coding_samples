@@ -1,11 +1,11 @@
 import java.util.*;
-public class print_subarrays {
+public class subarrays {
     public static void main(String args[]){
        int arr[]={1,2,3,4};
-       int res[]={};
+     LinkedList<Integer> ans=new LinkedList<>();
       // subarrays_without_rcursion(arr);
       // sumof_subarrays_prefixmethod(arr);
-       subarrays_with_rcursion(arr);
+       subarrays_without_rcursion(arr);
     }
     public static  void subarrays_without_rcursion(int arr[]){
             int count=0;  
@@ -45,19 +45,9 @@ public class print_subarrays {
         }
          
     }
-    public static void subarrays_with_rcursion(int  arr[]){
-        if(arr.length==0){
-            return ;
-        } 
+    public static void subarrays_with_rcursion(int  arr[],String ans){
+       
              
-        for(int i=0;i<arr.length;i++){
-             System.out.print(arr[i]);
-             int temp[]=new int[arr.length-1];
-               for(int j=1;j<arr.length;j++){
-                temp[j-1]=arr[j];
-               }
-                 subarrays_with_rcursion(temp);
-               
-               }
+        
     }
 }

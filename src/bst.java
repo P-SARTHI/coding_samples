@@ -143,14 +143,24 @@ class bst {
          
 
     }
+    public static int count_nodes(Node root,int count){
+          if(root==null){
+            return 0;
+          }
+         int a= count_nodes(root.left,count++);
+          int b=count_nodes(root.right, count++);
+          return 1+a+b; //1 is added to count root also with left part and right part
+
+
+    }
     public static void main(String arg[]){
-        int nodes[]={8,5,3,6,10,11,14};
+        int nodes[]={8,5,3,6,10,11,14,15};
         ArrayList<Integer> paths=new ArrayList<>();
         Node root=null;
         for(int i=0;i<nodes.length;i++){
         root=bst_creation(root,nodes[i]);
         }
-       paths_to_leaf(root, paths);
+       System.out.println(count_nodes(root, 0));
        
   
     }  

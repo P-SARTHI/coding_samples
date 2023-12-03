@@ -1,10 +1,10 @@
-public class trie_problems {
+public class trie_problems_word_break {
     public static void main(String args[]){
-        String words[]={"i","like","samsung","mobile","ice"};
+        String words[]={"apple","app","mango","man","woman"};
         for(int i=0;i<words.length;i++){
             insertion(words[i]);
          }
-         System.out.println(word_break_problem("ilikesamsung"));
+         System.out.println(word_break_problem("thor"));
     }
 
     static Node root=new Node();
@@ -72,4 +72,5 @@ public class trie_problems {
         }
         return false;
     }  
+   
 }

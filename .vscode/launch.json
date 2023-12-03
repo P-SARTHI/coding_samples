@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "trie_problem_longestword_with_prefixes",
+            "request": "launch",
+            "mainClass": "trie_problem_longestword_with_prefixes",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "trie_problem_unique_substrings",
+            "request": "launch",
+            "mainClass": "trie_problem_unique_substrings",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "subarrays",
+            "request": "launch",
+            "mainClass": "subarrays",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "trie_problems",
+            "request": "launch",
+            "mainClass": "trie_problems",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "subsequences",
+            "request": "launch",
+            "mainClass": "subsequences",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "substrings",
+            "request": "launch",
+            "mainClass": "substrings",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "searching_subsequences_in_tire",
             "request": "launch",
             "mainClass": "searching_subsequences_in_tire",
