@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_bsf",
+            "request": "launch",
+            "mainClass": "graph_bsf",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "graph_adjacencylist",
+            "request": "launch",
+            "mainClass": "graph_adjacencylist",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "trie_problem_longestword_with_prefixes",
             "request": "launch",
             "mainClass": "trie_problem_longestword_with_prefixes",
