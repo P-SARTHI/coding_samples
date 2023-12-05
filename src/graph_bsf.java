@@ -1,8 +1,9 @@
 import java.util.*;
 public class graph_bsf {
     public static void main(String args[]){
-        graph_creation1 g=new graph_creation1(7);
-        g.mapping(0, 1,2);
+        graph_creation1 g=new graph_creation1(9);
+        
+        g.mapping(0, 1,2);   
         g.mapping(0, 2,2);
   
         
@@ -19,6 +20,7 @@ public class graph_bsf {
         g.mapping(3, 5,-1);
   
         g.mapping(4, 2,2);
+        g.mapping(4, 3, 0);
         g.mapping(4, 5,2);
   
         g.mapping(5, 3,2);
@@ -26,9 +28,23 @@ public class graph_bsf {
         g.mapping(5, 6,2);
   
         g.mapping(6, 5,2);
+
+        g.mapping(7, 8, 0);
+       g.mapping(8, 7, 0);
   
   
-        g.BSF_order();
+       g.BSF_order(g.graph,0);
+
+        for(int i=0;i<g.graph.length;i++){ //for disconnectred graphs
+              if(g.vis[i]==false){
+                g.BSF_order(g.graph, i);
+              }
+         }
+    
+       
+      
+        
+       
         
       }
   }
@@ -46,6 +62,7 @@ class graph_creation1{
     }
     static ArrayList<edge> graph[];
     static int vertices;
+    static boolean vis[]=new boolean[vertices]; //to be used for disconnected graphs
     graph_creation1(int vertices){
         graph=new ArrayList[vertices];
         for(int i=0;i<graph.length;i++){
@@ -53,19 +70,22 @@ class graph_creation1{
         }
         this.vertices=vertices;
     }
+    
     public static  void mapping(int src,int dest,int weight){
         graph[src].add(new edge(src, dest,weight));
          
     }
-    public static void BSF_order(){// timecpmelxity =O(V+E)
+     
+    public static void BSF_order(ArrayList<edge> graph[], int vertex){// timecpmelxity =O(V+E)
+      
         boolean visted[]=new boolean[vertices];
         Queue<Integer> qu=new LinkedList<>();
-        qu.add(graph[0].get(0).src);
+        qu.add(graph[vertex].get(0).src);
         while(!qu.isEmpty()){
-            int curr=qu.peek();
+                 int curr=qu.peek();
                 if(visted[curr]==false){
                     
-                    System.out.println(curr);
+                    System.out.print(curr);
                     visted[curr]=true;
                    
                     for(int i=0;i<graph[curr].size();i++){
@@ -77,9 +97,12 @@ class graph_creation1{
                 else{
                     qu.remove();
                 }
+        }   
+        vis=visted;
+
                
-               
-        }
+        
+    
         
             
         

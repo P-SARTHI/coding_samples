@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_dsf",
+            "request": "launch",
+            "mainClass": "graph_dsf",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "graph_bsf",
             "request": "launch",
             "mainClass": "graph_bsf",
