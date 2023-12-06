@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_all_paths_to_node",
+            "request": "launch",
+            "mainClass": "graph_all_paths_to_node",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "graph_dsf",
             "request": "launch",
             "mainClass": "graph_dsf",
