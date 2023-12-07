@@ -1,7 +1,7 @@
 import java.util.*;
 public class graph_bsf {
     public static void main(String args[]){
-        graph_creation1 g=new graph_creation1(9);
+        graph_creation1 g=new graph_creation1(7);
         
         g.mapping(0, 1,2);   
         g.mapping(0, 2,2);
@@ -29,17 +29,15 @@ public class graph_bsf {
   
         g.mapping(6, 5,2);
 
-        g.mapping(7, 8, 0);
-       g.mapping(8, 7, 0);
-  
+       
   
        g.BSF_order(g.graph,0);
 
-        for(int i=0;i<g.graph.length;i++){ //for disconnectred graphs
-              if(g.vis[i]==false){
-                g.BSF_order(g.graph, i);
-              }
-         }
+      //  for(int i=0;i<g.graph.length;i++){ //for disconnectred graphs
+        //      if(g.vis[i]==false){
+          //      g.BSF_order(g.graph, i);
+            //  }
+         //}
     
        
       
@@ -78,27 +76,27 @@ class graph_creation1{
      
     public static void BSF_order(ArrayList<edge> graph[], int vertex){// timecpmelxity =O(V+E)
       
+      
         boolean visted[]=new boolean[vertices];
         Queue<Integer> qu=new LinkedList<>();
         qu.add(graph[vertex].get(0).src);
+        
         while(!qu.isEmpty()){
-                 int curr=qu.peek();
-                if(visted[curr]==false){
-                    
-                    System.out.print(curr);
-                    visted[curr]=true;
-                   
-                    for(int i=0;i<graph[curr].size();i++){
-                        edge e=graph[curr].get(i);
-                      qu.add(e.dest);
-                    }
-                  
-                }
-                else{
-                    qu.remove();
-                }
+                 int curr=qu.remove();
+          
+           System.out.println(curr);
+           visted[curr]=true;
+           for(edge neighbour: graph[curr]){
+              if(visted[neighbour.dest]==false){
+                qu.add(neighbour.dest);
+                visted[neighbour.dest]=true;
+              }
+           }
         }   
         vis=visted;
+      
+        
+       
 
                
         
