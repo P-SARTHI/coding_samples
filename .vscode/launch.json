@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "number_of_islands",
+            "request": "launch",
+            "mainClass": "number_of_islands",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "rotten_orange_problem",
             "request": "launch",
             "mainClass": "rotten_orange_problem",
