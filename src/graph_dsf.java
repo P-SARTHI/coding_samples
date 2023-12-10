@@ -71,14 +71,19 @@ class graph_creation2{
          
     }
     public static void print_dsf(ArrayList<edge> graph[],int vertex,boolean visited[]){ // complexity=O(V+E)
-         if(visited[vertex]==true){
-            return;
-         }
+        
        System.out.println(graph[vertex].get(0).src);
        visited[vertex]=true;
        for(int i=0;i<graph[vertex].size();i++){
         edge e=graph[vertex].get(i);
-        print_dsf(graph, e.dest, visited);
+        if(visited[e.dest]==false){
+            print_dsf(graph, e.dest, visited);
+        }
+        else {
+            return;
+        }
+        
+        
        }
     }
      

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_cycle_directed",
+            "request": "launch",
+            "mainClass": "graph_cycle_directed",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "graph_cycle_undirected",
+            "request": "launch",
+            "mainClass": "graph_cycle_undirected",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "number_of_islands",
             "request": "launch",
             "mainClass": "number_of_islands",
