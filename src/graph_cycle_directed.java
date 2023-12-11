@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class graph_cycle_directed {
+public class graph_cycle_directed { //time comelpexity =O(V+E)
     public static void main (String args[]){
         ArrayList<Edge> graph[]=new ArrayList[6];
            boolean visited[]=new boolean[6];

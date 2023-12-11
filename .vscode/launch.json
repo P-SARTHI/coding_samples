@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_toposort",
+            "request": "launch",
+            "mainClass": "graph_toposort",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "graph_cycle_directed",
             "request": "launch",
             "mainClass": "graph_cycle_directed",
