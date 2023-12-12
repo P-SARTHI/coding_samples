@@ -27,7 +27,7 @@ public class graph_cycle_directed { //time comelpexity =O(V+E)
         graph[2].add(new Edge(2, 0));
         graph[2].add(new Edge(2, 3));
         graph[4].add(new Edge(4, 5));
-        graph[5].add(new Edge(5, 1));
+        graph[5].add(new Edge(5, 3));
       //  graph[3].add(new Edge(3, 0));
         
         }
