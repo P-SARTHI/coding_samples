@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sequence_of_courses",
+            "request": "launch",
+            "mainClass": "sequence_of_courses",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "graph_toposort",
             "request": "launch",
             "mainClass": "graph_toposort",

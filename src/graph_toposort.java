@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class graph_toposort {
+public class graph_toposort {// time complexity O(V+E), most of tha algo same as of DFS butwith some modifications called KAhns algo
     public static void main (String args[]){
         int v=6;
     ArrayList<Edge> graph[]=new ArrayList[v];
