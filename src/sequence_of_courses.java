@@ -1,80 +1,50 @@
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class sequence_of_courses {
     public static void main(String args[]){
-    int prerequisites[][]={{1,0},{0,1}};
-    boolean visited[][]=new boolean[prerequisites.length][prerequisites[0].length];
-    boolean is_instack[][]=new boolean[prerequisites.length][prerequisites[0].length];
-    
-    System.out.println(iscyclic(prerequisites));
+      int prerequisites[][]={{1,0},{0,1}};
+      System.out.println(canFinish(2, prerequisites));
     }
     public static boolean canFinish(int numCourses, int[][] prerequisites){
+        ArrayList<Integer> adj[]=new ArrayList[numCourses];
+        boolean visited[]=new boolean[numCourses];
+        boolean is_instack[]=new boolean[numCourses];
+        for(int i=0;i<adj.length;i++){
+            adj[i]=new ArrayList<>();
         
-        boolean visted[][]=new boolean[prerequisites.length][prerequisites[0].length];
-          //  if(iscyclic(prerequisites)){
-          //      return false;
-          //  }
-            for(int i=0;i<prerequisites.length;i++){
-                for(int j=0;j<prerequisites[0].length;j++){
-                    Stack<Integer> st=new Stack<>();
-                    dfs(prerequisites, i, j, visted,st);
-                    if(st.size()==numCourses){
+        }
+        for(int i=0;i<prerequisites.length;i++){
+           adj[prerequisites[i][1]].add(prerequisites[i][0]);
+        }
+      for(int i=0;i<adj.length;i++){
+        if(visited[i]==false){
+            if(iscyclic(adj,i,visited,is_instack)){
+                return true;
+            }
+        }
+      } 
+      return false;
+        
+        
+        
+    }
+    public static boolean iscyclic(ArrayList<Integer> adj[],int start,boolean visited[], boolean is_instack[]){
+                visited[start]=true;
+                is_instack[start]=true;
+
+                for(int i=0;i<adj[start].size();i++){
+                    if(visited[adj[start].get(i)]==false){
+                        if(iscyclic(adj, adj[start].get(i), visited, is_instack))
                         return true;
                     }
+                    if(visited[adj[start].get(i)]==true && is_instack[adj[start].get(i)]==true){
+                         return true;
+                    }
                 }
-            }
-            return  false;
-            
+                is_instack[start]=false;
+                return false;
     }
    
-    public static boolean iscyclic(int prerequisites[][]){
-        boolean visited[][]=new boolean[prerequisites.length][prerequisites[0].length];
-        
-         for(int i=0;i<prerequisites.length;i++){
-            for(int j=0;j<prerequisites[0].length;j++){
-                if(visited[i][j]==false){
-                     boolean is_instack[][]=new boolean[prerequisites.length][prerequisites[0].length];
-                    if(iscyclic_ut(prerequisites,i,j,visited,is_instack))
-                    return true;
-                }
-            }
-         }
-         return false;
-
-    }
-    public static boolean iscyclic_ut(int prerequisites[][], int start_row,int start_col,boolean visited[][],boolean is_instack[][]){
-       
-            visited[start_row][start_col]=true;
-            is_instack[start_row][start_col]=true;
-
-            if(isvalid(start_row,start_col-1,prerequisites)&& !visited[start_row][start_col-1]  ){
-              if(iscyclic_ut(prerequisites, start_row, start_col-1, visited,is_instack))
-              return true;
-            }
-             else if(isvalid(start_row,start_col-1,prerequisites)){
-               if((visited[start_row][start_col-1]) && (is_instack[start_row][start_col-1])){
-                return true;}
-            }
-            is_instack[start_row][start_col]=false;
-            return false;
-           
-
-         
-    }
-    public static boolean isvalid(int start_row,int start_col,int prerequisites[][]){
-        if((start_row>=0 && start_row<prerequisites.length)&& (start_col>=0 && start_col<prerequisites[0].length)){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    public static void  dfs(int prerequisites[][],int start_row,int start_col,boolean visited[][],Stack<Integer> st){
-               visited[start_row][start_col]=true;
-
-                if(isvalid(start_row,start_col-1,prerequisites)&& !visited[start_row][start_col-1]){
-                    dfs(prerequisites, start_row, start_col-1, visited, st);
-                }
-                st.push(prerequisites[start_row][start_col]);
-    }
+   
 }
