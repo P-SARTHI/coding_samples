@@ -20,11 +20,11 @@ public class sequence_of_courses {
       for(int i=0;i<adj.length;i++){
         if(visited[i]==false){
             if(iscyclic(adj,i,visited,is_instack)){
-                return true;
+                return false;
             }
         }
       } 
-      return false;
+      return true;
         
         
         

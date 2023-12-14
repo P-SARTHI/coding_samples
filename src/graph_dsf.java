@@ -80,7 +80,7 @@ class graph_creation2{
             print_dsf(graph, e.dest, visited);
         }
         else {
-            return;
+            //return;
         }
         
         

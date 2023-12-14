@@ -1,10 +1,13 @@
 
-import java.util.HashMap;
+import java.util.*;
 
 class experiments{
    public static void main(String args[]){
-    int arr[][]={ {0}};
-    int k=-100;
-     System.out.println((char)('a'+1));
+    HashSet<Integer> p=new HashSet<>();
+    p.add(1);
+    p.add(2);
+     HashSet<Integer> q=new HashSet<>();
+     
+     System.out.println(p.containsAll(q));
    }
 }
