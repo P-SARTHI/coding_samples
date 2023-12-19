@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_bellmanford",
+            "request": "launch",
+            "mainClass": "graph_bellmanford",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "graph_dijkasta",
+            "request": "launch",
+            "mainClass": "graph_dijkasta",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "eventual_terminalnode_problem",
             "request": "launch",
             "mainClass": "eventual_terminalnode_problem",
