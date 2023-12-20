@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "cheapestflight_withkstops",
+            "request": "launch",
+            "mainClass": "cheapestflight_withkstops",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "graph_bellmanford",
             "request": "launch",
             "mainClass": "graph_bellmanford",
