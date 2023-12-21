@@ -16,7 +16,7 @@ public class cheapestflight_withkstops {
         }
         
         //now do shortest path by bellman ford
-        for(int i=0;i<2;i++){
+        for(int i=0;i<k+1;i++){
             int[] temp = Arrays.copyOf(dist, n);
            for(int j=0;j<flights.length;j++){
             int u=flights[j][0];

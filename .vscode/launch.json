@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_kosaraju",
+            "request": "launch",
+            "mainClass": "graph_kosaraju",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "graph_prims",
+            "request": "launch",
+            "mainClass": "graph_prims",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "cheapestflight_withkstops",
             "request": "launch",
             "mainClass": "cheapestflight_withkstops",
