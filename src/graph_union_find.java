@@ -10,7 +10,7 @@ public class graph_union_find {
         System.out.println("connected");
      }
      else {
-        System.out.println("disconnected");
+        System.out.println("disconnnected");
      }
    }
    public static void union(int edges[][],int n){
@@ -31,10 +31,12 @@ public class graph_union_find {
             }
             if(rank.get(ul_parent_u)<rank.get(ul_parent_v)){
                    parent.set(ul_parent_u,ul_parent_v);
+                   rank.set(ul_parent_v,ul_parent_v+1);
                    
             }
             if(rank.get(ul_parent_u)>rank.get(ul_parent_v)){
                 parent.set(ul_parent_v,ul_parent_u);
+                    rank.set(ul_parent_u,ul_parent_u+1);
                    
             }
             if(rank.get(ul_parent_u)==rank.get(ul_parent_v)){
