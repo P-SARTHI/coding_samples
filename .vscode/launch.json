@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graph_union_find",
+            "request": "launch",
+            "mainClass": "graph_union_find",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
+            "name": "graph_removemax_nodes",
+            "request": "launch",
+            "mainClass": "graph_removemax_nodes",
+            "projectName": "Test_db03d289"
+        },
+        {
+            "type": "java",
             "name": "graph_kosaraju",
             "request": "launch",
             "mainClass": "graph_kosaraju",
